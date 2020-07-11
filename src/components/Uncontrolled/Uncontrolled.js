@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import './Uncontrolled.css'
 
 export function Uncontrolled() {
-  const nameInput = useRef('')
-  const notesTextarea = useRef('')
-  const frameworkSelect = useRef(null)
+  const nameInput = useRef()
+  const notesTextarea = useRef()
+  const frameworkSelect = useRef()
 
   function handleSubmit(event) {
     console.log('Uncontrolled', {
@@ -20,11 +20,11 @@ export function Uncontrolled() {
       <h1>Uncontrolled</h1>
       <label>
         Name:
-        <input type="text" ref={nameInput} />
+        <input type="text" ref={nameInput} defaultValue="" />
       </label>
       <label>
         Notes:
-        <textarea ref={notesTextarea} />
+        <textarea ref={notesTextarea} defaultValue="" />
       </label>
       <label>
         Your favorite framework:
