@@ -1,0 +1,5 @@
+.app__main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}

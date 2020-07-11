@@ -1,0 +1,10 @@
+.uncontrolled__form-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 5px;
+}
+
+.uncontrolled__form-container * {
+  width: 100%;
+}
